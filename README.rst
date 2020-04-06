@@ -6,7 +6,7 @@ How to make an ImagePypelines Plugin
 ====================================
 
 1. clone this project
-    '''git clone <ryan insert clone link>'''
+    '''git clone https://github.com/RyanHartzell/imagepypelines_template.git'''
 
 2. rename the 'imagepypelines_template' directories to the name of your project
 
@@ -26,16 +26,18 @@ How to make an ImagePypelines Plugin
 
 6. Start coding!
 
-7. import your code in `__init__.py`
+7. Import your code in `__init__.py`
 
-8. open a terminal and run `python setup.py install` to install!
+8. Set up a virtual environment!!!
 
-9. test an import with imagepypelines!
+9. Open a terminal, start up your virtual environment, and run `python setup.py install -e` to install in editable mode! (This allows your source code changes to be reflected in the installed library)
+
+10. Test an import with imagepypelines!
     - ```python -c "import imagepypelines as ip; ip.require('your_plugin_namespace')"```
 
 
-How to upload your plugin pypi so other people can install it with pip
-----------------------------------------------------------------------
+How to upload your plugin to pypi so other people can install it with pip
+-------------------------------------------------------------------------
 *Note*: This is a super quick guide, for more help see `https://packaging.python.org/tutorials/packaging-projects/`_
 
 1. install some quick dependencies
