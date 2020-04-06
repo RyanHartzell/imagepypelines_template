@@ -12,27 +12,27 @@ How to make an ImagePypelines Plugin
 
 3. edit the DIRECTORY_NAME and NAMESPACE variables in setup.py
 
-4. Put a license in the LICENSE file.
+4. Put a license in the LICENSE file
     - see https://choosealicense.com/licenses/ for help
 
-5. Add the names of dependencies you need (e.g. numpy or scipy) in requirements.txt
+5. Add the names of dependencies you need (e\.g\. numpy or scipy) in requirements\.txt
     - each dependency should be it's own line
     - you can optionally specify the version you need as well
     - e.g. `numpy>=1.14`
 
-5. If you need to ship data with your project (for examples or tests):
+6. If you need to ship data with your project (for examples or tests):
     - Put your files in the data directory. It will be automatically included
     - see `__init.__.py` to see how to fetch the filenames at runtime
 
-6. Start coding!
+7. Start coding!
 
-7. Import your code in `__init__.py`
+8. Import your code in `__init__.py`
 
-8. Set up a virtual environment!!!
+9. Set up a virtual environment!!!
 
-9. Open a terminal, start up your virtual environment, and run `python setup.py install -e` to install in editable mode! (This allows your source code changes to be reflected in the installed library)
+10. Open a terminal, start up your virtual environment, and run `python setup.py install -e` to install in editable mode! (This allows your source code changes to be reflected in the installed library)
 
-10. Test an import with imagepypelines!
+11. Test an import with imagepypelines!
     - ```python -c "import imagepypelines as ip; ip.require('your_plugin_namespace')"```
 
 
@@ -47,7 +47,7 @@ How to upload your plugin to pypi so other people can install it with pip
 ```python setup.py sdist bdist_wheel```
 
 
-6. if everything worked, then upload it to pypi!
+3. if everything worked, then upload it to pypi!
 ```twine upload dist/*```
 
 
