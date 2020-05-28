@@ -1,2 +1,3 @@
-recursive-include imagepypelines_template/data *
+recursive-include */data *
 include LICENSE
+include README.*

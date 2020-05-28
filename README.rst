@@ -10,7 +10,7 @@ How to make an ImagePypelines Plugin
 
 2. rename the 'imagepypelines_template' directories to the name of your project
 
-3. edit the DIRECTORY_NAME and NAMESPACE variables in setup.py
+3. edit the `DIRECTORY_NAME` and `NAME` variables in setup.py
 
 4. Put a license in the LICENSE file
     - see https://choosealicense.com/licenses/ for help
@@ -22,23 +22,25 @@ How to make an ImagePypelines Plugin
 
 6. If you need to ship data with your project (for examples or tests):
     - Put your files in the data directory. It will be automatically included
-    - see `__init.__.py` to see how to fetch the filenames at runtime
+        when you package your plugin
+    - see `__init.__.py` for examples on how to fetch the filenames at runtime
 
 7. Start coding!
-    -
+    - place your code files in code directory
+
 8. Import your code in `__init__.py`
-    -
-9. Set up a virtual environment!!!
-    -
-10. Open a terminal, start up your virtual environment, and run `python setup.py install -e` to install in editable mode! (This allows your source code changes to be reflected in the installed library)
-    -
+    - some examples are listed in `__init__.py` to help you get started
+
+10. run `pip install -e .` to install your plugin!
+    - the `-e` installs your plugin in editable mode *(This allows your source code changes to be reflected in the installed library)*
+
 11. Test an import with imagepypelines!
-    - ```python -c "import imagepypelines as ip; ip.require('your_plugin_namespace')"```
+    - ```python -c "import imagepypelines as ip; ip.require('<your_plugin_name>')"```
 
 
 How to upload your plugin to pypi so other people can install it with pip
 -------------------------------------------------------------------------
-*Note*: This is a super quick guide, for more help see `https://packaging.python.org/tutorials/packaging-projects/`_
+**Note**: This is a super quick guide, for more help see `https://packaging.python.org/tutorials/packaging-projects/`_
 
 1. install some quick dependencies
 ```pip install twine wheel```
@@ -46,9 +48,11 @@ How to upload your plugin to pypi so other people can install it with pip
 2. create the necessary dists using setup.py
 ```python setup.py sdist bdist_wheel```
 
-
 3. if everything worked, then upload it to pypi!
 ```twine upload dist/*```
+
+4. You can then install it using pip!
+```pip install <your_plugin_name>```
 
 
 Other information

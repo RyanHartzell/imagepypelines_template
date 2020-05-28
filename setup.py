@@ -5,8 +5,8 @@ from setuptools import setup, find_packages
 # this should be the name of your source directory like "imagepypelines_template"
 DIRECTORY_NAME = "imagepypelines_template"
 # this should be the name your namespace - so your plugin will be available as
-# imagepypelines.<namespace>
-NAMESPACE = "template"
+# imagepypelines.<name>
+NAME = "template"
 
 
 # ==============================================================================
@@ -30,7 +30,7 @@ with open( os.path.join(current_dir, 'README.rst'), 'r' ) as f:
 
 setup(name=DIRECTORY_NAME,
       packages=find_packages(),
-      entry_points={'imagepypelines.plugins': '{} = {}'.format(NAMESPACE, DIRECTORY_NAME)},
+      entry_points={'imagepypelines.plugins': '{} = {}'.format(NAME, DIRECTORY_NAME)},
       include_package_data=True,
       install_requires=requirements,
       long_description=readme_text,

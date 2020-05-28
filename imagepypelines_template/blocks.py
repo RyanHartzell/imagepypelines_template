@@ -4,7 +4,7 @@ import imagepypelines as ip
 # https://www.imagepypelines.org/examples.html
 
 ################################################################################
-#                          @Ryan Blockify Examples
+#                          Blockify Examples
 ################################################################################
 
 #@Ryan - blockify Example1 - super simple example
@@ -23,7 +23,7 @@ import imagepypelines as ip
 
 
 ################################################################################
-#                          @Ryan Inheritance Examples
+#                          Inheritance Examples
 ################################################################################
 
 #@Ryan - Inheritance Example1 - super simple example
